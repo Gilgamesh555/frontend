@@ -7,16 +7,10 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "husky-install": "husky install",
+        "prepare": "husky install",
         "lint:prettier-check": "prettier src --check",
         "lint:fix": "prettier src --write",
-        "lint": "eslint src --color",
-        "precommit": "npm run lint:fix && npm run lint:prettier-check && npm run lint"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint:prettier:check"
-        }
+        "lint": "prettier src --write && eslint src --color"
     },
     "dependencies": {
         "react": "^18.2.0",
