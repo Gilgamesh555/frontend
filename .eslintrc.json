@@ -36,6 +36,6 @@
         "no-duplicate-imports": "error",
         "camelcase": "error",
         "spaced-comment": "error",
-        "quotes": ["warn", "double"]
+        "quotes": ["error", "double"]
     }
 }
